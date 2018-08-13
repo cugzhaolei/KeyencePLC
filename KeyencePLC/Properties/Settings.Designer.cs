@@ -8,6 +8,8 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+using static KeyencePLC.PLC;
+
 namespace KeyencePLC.Properties
 {
 
@@ -26,5 +28,49 @@ namespace KeyencePLC.Properties
                 return defaultInstance;
             }
         }
+
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("192.168.1.10")]
+        public string HostIP
+        {
+            get
+            {
+                return ((string)(this["HostIP"]));
+            }
+            set
+            {
+                this["HostIP"] = value;
+            }
+        }
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("8501")]
+        public string Port
+        {
+            get
+            {
+                return ((string)(this["Port"]));
+            }
+            set
+            {
+                this["Port"] = value;
+            }
+        }
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Hex")]
+        public DataMode DataMode
+        {
+            get
+            {
+                return ((global::KeyencePLC.PLC.DataMode)(this["DataMode"]));
+            }
+            set
+            {
+                this["DataMode"] = value;
+            }
+        }
+
     }
 }
