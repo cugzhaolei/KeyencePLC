@@ -14,7 +14,7 @@
         Title="MainWindow" Height="1080" Width="1920">
     <Grid>
         <Grid Visibility="Visible" x:Name="LogFrame" Grid.ColumnSpan="2">
-            <Grid HorizontalAlignment="Left" Height="660" Margin="-4,90,0,0" Background="White" VerticalAlignment="Top" Width="1906">
+            <Grid HorizontalAlignment="Left" Height="677" Margin="-4,73,0,0" Background="White" VerticalAlignment="Top" Width="1906">
                 <GroupBox Header="通信设定" x:Name="gbPortSettings" HorizontalAlignment="Left" Height="89" Margin="377,274,0,0" VerticalAlignment="Top" Width="325" FontSize="18" FontWeight="Bold">
 
                 </GroupBox>
@@ -59,7 +59,7 @@
                 </StatusBar>
                 <TextBox x:Name="txtSendData" HorizontalAlignment="Left" Height="24" Margin="482,371,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="220"  KeyDown="txtSendData_KeyDown_1" KeyUp="txtSendData_KeyUp"/>
                 <TextBox  x:Name="textBoxReceive" HorizontalAlignment="Left" Height="24" Margin="482,416,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="220"/>
-                <RichTextBox HorizontalAlignment="Left" x:Name="rtbText" Height="164" Margin="24,10,0,0" VerticalAlignment="Top" Width="580">
+                <RichTextBox HorizontalAlignment="Left" x:Name="rtbText" Height="164" Margin="24,10,0,0" VerticalAlignment="Top" Width="365">
                     <FlowDocument>
                         <Paragraph>
                             <Run Text="RichTextBox"/>
@@ -68,7 +68,7 @@
                 </RichTextBox>
                 <Label Content="接受内容：" HorizontalAlignment="Left" Margin="377,406,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold"/>
                 <Button Content="Button" x:Name="TestButton" HorizontalAlignment="Left" Margin="377,542,0,0" VerticalAlignment="Top" Width="100" Height="31" Click="TestButton_Click"/>
-                <RichTextBox HorizontalAlignment="Left" x:Name="rtbConsole" Height="164" Margin="645,10,0,0" VerticalAlignment="Top" Width="479">
+                <RichTextBox HorizontalAlignment="Left" x:Name="rtbConsole" Height="164" Margin="504,10,0,0" VerticalAlignment="Top" Width="334">
                     <FlowDocument>
                         <Paragraph>
                             <Run Text="RichTextBox"/>
