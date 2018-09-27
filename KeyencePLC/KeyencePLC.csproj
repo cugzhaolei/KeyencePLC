@@ -36,6 +36,9 @@
     <Reference Include="HslCommunication, Version=5.2.1.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\HslCommunication.5.2.1\lib\net35\HslCommunication.dll</HintPath>
     </Reference>
+    <Reference Include="MahApps.Metro">
+      <HintPath>C:\Users\admin\Desktop\Rubber_Sucker_Assemble (3)\packages\MahApps.Metro.1.6.5\lib\net40\MahApps.Metro.dll</HintPath>
+    </Reference>
     <Reference Include="MaterialDesignColors, Version=1.1.2.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\MaterialDesignColors.1.1.2\lib\net45\MaterialDesignColors.dll</HintPath>
     </Reference>
@@ -68,6 +71,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="WebPage\WebAdaptor.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -111,6 +115,10 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="readme.txt" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="WebPage\Demo.html" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

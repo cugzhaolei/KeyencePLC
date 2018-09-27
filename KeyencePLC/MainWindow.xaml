@@ -15,22 +15,22 @@
     <Grid>
         <Grid Visibility="Visible" x:Name="LogFrame" Grid.ColumnSpan="2">
             <Grid HorizontalAlignment="Left" Height="677" Margin="-4,73,0,0" Background="White" VerticalAlignment="Top" Width="1906">
-                <GroupBox Header="通信设定" x:Name="gbPortSettings" HorizontalAlignment="Left" Height="89" Margin="377,274,0,0" VerticalAlignment="Top" Width="325" FontSize="18" FontWeight="Bold">
+                <GroupBox Header="通信设定" x:Name="gbPortSettings" HorizontalAlignment="Left" Height="89" Margin="159,249,0,0" VerticalAlignment="Top" Width="325" FontSize="18" FontWeight="Bold">
 
                 </GroupBox>
-                <TextBox x:Name="txtRemoteAddress" HorizontalAlignment="Left" TextAlignment="Center" Text="192.168.1.105" Height="24" Margin="450,327,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="154" FontSize="14" FontWeight="Normal"/>
+                <TextBox x:Name="txtRemoteAddress" HorizontalAlignment="Left" TextAlignment="Center" Text="192.168.1.105" Height="24" Margin="232,302,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="154" FontSize="14" FontWeight="Normal"/>
 
-                <TextBlock HorizontalAlignment="Left" Margin="391,327,0,0" TextWrapping="Wrap" Text="主机：" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" Height="26"/>
-                <Label Content="：" HorizontalAlignment="Left" Margin="610,323,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="18" Width="23"/>
-                <TextBox x:Name="txtPort" HorizontalAlignment="Left" Height="23" Margin="645,328,0,0" TextWrapping="Wrap" Text="8501" VerticalAlignment="Top" Width="46" FontSize="14"/>
-                <GroupBox Header="数据格式" HorizontalAlignment="Left" Height="89" Margin="732,274,0,0" VerticalAlignment="Top" Width="195" FontSize="18" FontWeight="Bold">
+                <TextBlock HorizontalAlignment="Left" Margin="173,302,0,0" TextWrapping="Wrap" Text="主机：" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" Height="26"/>
+                <Label Content="：" HorizontalAlignment="Left" Margin="392,298,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="18" Width="23"/>
+                <TextBox x:Name="txtPort" HorizontalAlignment="Left" Height="23" Margin="427,303,0,0" TextWrapping="Wrap" Text="8501" VerticalAlignment="Top" Width="46" FontSize="14"/>
+                <GroupBox Header="数据格式" HorizontalAlignment="Left" Height="77" Margin="514,249,0,0" VerticalAlignment="Top" Width="195" FontSize="18" FontWeight="Bold">
                     <RadioButton x:Name="rbHex" Content="Hex" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" Checked="rbHex_Checked" IsChecked="True"/>
                 </GroupBox>
-                <RadioButton x:Name="rbText" Content="Text" HorizontalAlignment="Left" Margin="848,333,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" Checked="rbText_Checked"/>
-                <Button Content="打开端口" x:Name="btnOpenPort" Style="{DynamicResource SquareButtonStyle}" HorizontalAlignment="Left" Margin="732,371,0,0" VerticalAlignment="Top" Width="81" Height="70" Background="White" Click="btnOpenPort_Click"/>
-                <Label Content="发送内容：" HorizontalAlignment="Left" Margin="377,368,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold"/>
-                <Button Content="发送数据" x:Name="btnSend" Style="{DynamicResource SquareButtonStyle}" HorizontalAlignment="Left" Margin="848,371,0,0" VerticalAlignment="Top" Width="81" Height="70" Background="White" Click="btnSend_Click"/>
-                <StatusBar HorizontalAlignment="Left" Height="32" Margin="379,466,0,0" VerticalAlignment="Top" Width="550">
+                <RadioButton x:Name="rbText" Content="Text" HorizontalAlignment="Left" Margin="630,281,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" Checked="rbText_Checked"/>
+                <Button Content="打开端口" x:Name="btnOpenPort" Style="{DynamicResource SquareButtonStyle}" HorizontalAlignment="Left" Margin="514,346,0,0" VerticalAlignment="Top" Width="81" Height="70" Background="White" Click="btnOpenPort_Click"/>
+                <Label Content="发送内容：" HorizontalAlignment="Left" Margin="159,343,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold"/>
+                <Button Content="发送数据" x:Name="btnSend" Style="{DynamicResource SquareButtonStyle}" HorizontalAlignment="Left" Margin="630,346,0,0" VerticalAlignment="Top" Width="81" Height="70" Background="White" Click="btnSend_Click"/>
+                <StatusBar HorizontalAlignment="Left" Height="32" Margin="161,441,0,0" VerticalAlignment="Top" Width="550">
                     <StatusBar.ItemsPanel>
                         <ItemsPanelTemplate>
                             <Grid>
@@ -57,8 +57,8 @@
                     </StatusBarItem>
                     <Label x:Name="sbpLocalIP" Content="本机地址："/>
                 </StatusBar>
-                <TextBox x:Name="txtSendData" HorizontalAlignment="Left" Height="24" Margin="482,371,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="220"  KeyDown="txtSendData_KeyDown_1" KeyUp="txtSendData_KeyUp"/>
-                <TextBox  x:Name="textBoxReceive" HorizontalAlignment="Left" Height="24" Margin="482,416,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="220"/>
+                <TextBox x:Name="txtSendData" HorizontalAlignment="Left" Height="24" Margin="264,346,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="220"  KeyDown="txtSendData_KeyDown_1" KeyUp="txtSendData_KeyUp"/>
+                <TextBox  x:Name="textBoxReceive" HorizontalAlignment="Left" Height="24" Margin="264,391,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="220"/>
                 <RichTextBox HorizontalAlignment="Left" x:Name="rtbText" Height="164" Margin="24,10,0,0" VerticalAlignment="Top" Width="365">
                     <FlowDocument>
                         <Paragraph>
@@ -66,8 +66,8 @@
                         </Paragraph>
                     </FlowDocument>
                 </RichTextBox>
-                <Label Content="接受内容：" HorizontalAlignment="Left" Margin="377,406,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold"/>
-                <Button Content="Button" x:Name="TestButton" HorizontalAlignment="Left" Margin="377,542,0,0" VerticalAlignment="Top" Width="100" Height="31" Click="TestButton_Click"/>
+                <Label Content="接受内容：" HorizontalAlignment="Left" Margin="159,381,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold"/>
+                <Button Content="Button" x:Name="TestButton" HorizontalAlignment="Left" Margin="159,517,0,0" VerticalAlignment="Top" Width="100" Height="31" Click="TestButton_Click"/>
                 <RichTextBox HorizontalAlignment="Left" x:Name="rtbConsole" Height="164" Margin="504,10,0,0" VerticalAlignment="Top" Width="334">
                     <FlowDocument>
                         <Paragraph>
@@ -79,7 +79,9 @@
             </Grid>
 
             <TextBlock HorizontalAlignment="Left" Height="60" Margin="460,10,0,-12" TextWrapping="Wrap" Text="Keyence-PLC-Monitor" VerticalAlignment="Top" Width="408" FontWeight="Bold" FontSize="36" Background="{x:Null}"/>
-            <TextBox Height="106" Margin="-4,750,-6,0" x:Name="AlarmInfo" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Background="#FFACAAAA"/>
+            <TextBox Height="106" Margin="0,750,0,0" x:Name="AlarmInfo" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Background="#FFACAAAA"/>
+            <WebBrowser HorizontalAlignment="Left" x:Name="WebBrowserDemo" Source="https://www.baidu.com" Height="270" Margin="940,95,0,0" VerticalAlignment="Top" Width="775"/>
+            <WebBrowser HorizontalAlignment="Left" x:Name="WebBrowserNet" Height="270" Margin="940,420,0,0" VerticalAlignment="Top" Width="775"/>
             <!--<Image HorizontalAlignment="Left" Height="32" Margin="41,480,0,0" VerticalAlignment="Top" Width="32" Source="pack://application:,,,/Reference/Icon/PNG/生产128white.png"/>-->
 
             <!--<Frame Name="frmMain" NavigationUIVisibility="Hidden"></Frame>-->

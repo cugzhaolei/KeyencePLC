@@ -3,6 +3,7 @@ using KeyencePLC.Properties;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Net;
 using System.Net.Sockets;
@@ -64,6 +65,9 @@ namespace KeyencePLC
 
             // Restore the users settings
             InitializeControlValues();
+
+            //WebBrowserDemo.Navigate(new Uri("www.baidu.com"));
+            WebBrowserNet.Navigate(new Uri(Directory.GetCurrentDirectory()+"/WebPage/Demo.html"));
 
             // Enable/disable controls based on the current state
             EnableControls();
