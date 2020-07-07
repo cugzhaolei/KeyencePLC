@@ -11,3 +11,4 @@ with sendquery and readquery,you can read from and send to plc .
 支持TCP/IP 和 串口通信
 页面采用WPF设计
 
+## 希望可以改进更多
